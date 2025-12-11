@@ -1,0 +1,135 @@
+/* CSS only for home page */
+
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop-btn {
+    background: #27ae60;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Section title */
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    color: #2c3e50;
+}
+
+/* Features section */
+.features {
+    padding: 40px 20px;
+    background: white;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 25px 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card i {
+    font-size: 40px;
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Popular categories */
+.popular {
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.category-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.cat-card {
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.cat-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.cat-card h3 {
+    padding: 15px;
+    color: #333;
+}
+
+.cat-card p {
+    padding: 0 15px 15px;
+    color: #666;
+}
+
+.view-btn {
+    background: white;
+    color: #27ae60;
+    border: 2px solid #27ae60;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}

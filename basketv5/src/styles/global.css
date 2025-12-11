@@ -1,0 +1,86 @@
+/* Combined global styles from original project */
+/* ---------- Base / layout (from style.css) ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.top-bar {
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.header {
+    background: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo { display:flex; align-items:center }
+.logo h1 { color:#27ae60; font-size:24px; margin-left:8px }
+.nav { display:flex; gap:20px }
+.nav a { text-decoration:none; color:#333; padding:5px 10px }
+.nav a.active { color:#27ae60; border-bottom:2px solid #27ae60 }
+.search { display:flex }
+.user-btns { display:flex; gap:10px }
+
+.page-title { text-align:center; margin:30px 0; color:#2c3e50 }
+
+.footer { background:#2c3e50; color:white; padding:40px 20px 20px; margin-top:50px }
+.footer-content { display:flex; justify-content:space-between; flex-wrap:wrap; max-width:1200px; margin:0 auto }
+.footer-section { width:200px; margin-bottom:20px }
+.footer-section h3 { color:#27ae60; margin-bottom:15px }
+
+.modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000 }
+.modal.show { display:flex; justify-content:center; align-items:center }
+.modal-content { background:white; padding:30px; border-radius:5px; width:90%; max-width:400px; position:relative }
+.close-btn { position:absolute; top:10px; right:10px; background:none; border:none; font-size:24px; cursor:pointer }
+
+.green-btn { background:#27ae60; color:white; padding:10px; border:none; border-radius:3px; cursor:pointer }
+
+/* ---------- Home page (from home.css) ---------- */
+.hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80'); background-size:cover; background-position:center; color:white; text-align:center; padding:80px 20px }
+.hero-content h2 { font-size:36px; margin-bottom:20px }
+.shop-btn { background:#27ae60; color:white; padding:12px 30px; border-radius:5px; text-decoration:none }
+.section-title { text-align:center; margin:40px 0; color:#2c3e50 }
+.features { padding:40px 20px; background:white }
+.feature-cards { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; max-width:1200px; margin:0 auto }
+.card { background:#f9f9f9; padding:25px 20px; border-radius:5px; text-align:center; width:200px; box-shadow:0 3px 10px rgba(0,0,0,0.1) }
+.card i { font-size:40px; color:#27ae60; margin-bottom:15px }
+.popular { padding:40px 20px; background:#f9f9f9 }
+.category-cards { display:flex; justify-content:center; flex-wrap:wrap; gap:25px; max-width:1200px; margin:0 auto 30px }
+.cat-card { background:white; border-radius:5px; overflow:hidden; width:280px; box-shadow:0 3px 10px rgba(0,0,0,0.1) }
+.cat-card img { width:100%; height:180px; object-fit:cover }
+
+/* ---------- Store (from store.css) ---------- */
+.filters { display:flex; gap:15px; justify-content:center; margin:20px 0; flex-wrap:wrap }
+.products-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:25px; max-width:1200px; margin:30px auto; padding:0 20px 40px }
+.product-card { background:white; border:1px solid #ddd; border-radius:5px; padding:15px; text-align:center }
+.product-card img { width:100%; height:150px; object-fit:cover; border-radius:5px; margin-bottom:10px }
+.price { color:#27ae60; font-weight:bold; font-size:18px; margin:10px 0 }
+.add-btn { background:#27ae60; color:white; border:none; padding:10px 20px; border-radius:3px; cursor:pointer; width:100% }
+
+/* ---------- Cart (from cart.css) ---------- */
+.cart-container { display:grid; grid-template-columns:2fr 1fr; gap:30px; max-width:1200px; margin:0 auto 40px; padding:0 20px }
+.cart-items { background:white; border:1px solid #ddd; border-radius:5px; padding:20px }
+.empty-cart { text-align:center; padding:60px 20px }
+.shop-now-btn { background:#27ae60; color:white; padding:10px 25px; border-radius:5px; text-decoration:none }
+
+@media (max-width: 768px) {
+    .header { flex-direction:column; gap:15px }
+    .footer-content { flex-direction:column }
+    .cart-container { grid-template-columns:1fr }
+}
